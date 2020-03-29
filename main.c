@@ -24,5 +24,28 @@ main()
 
         printf("\n");
     }
-}
 
+    for (i = 0; i < n; i++)
+
+    {
+        for (j = i; j < n; j++)
+
+        {
+            if (burst[i] > burst[j])
+
+            {
+                temp = burst[i];
+
+                burst[i] = burst[j];
+
+                burst[j] = temp;
+
+                temp = process[i];
+
+                process[i] = process[j];
+
+                process[j] = temp;
+            }
+        }
+    }
+}
