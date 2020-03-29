@@ -48,4 +48,21 @@ main()
             }
         }
     }
+
+    printf("\nWaiting time | Turn around time \n");
+
+    j = 0;
+
+    for (i = 0; i < n; i++)
+
+    {
+        wait[i] = j;
+        j = burst[i] + j;
+
+        printf("\nP%d : %d\t\t%d", process[i] + 1, wait[i], wait[i] + burst[i]);
+
+        avgw += wait[i];
+
+        avgt += wait[i] + burst[i];
+    }
 }
