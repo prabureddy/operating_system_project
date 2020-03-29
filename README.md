@@ -4,5 +4,6 @@ Following set of question- Consider that a system has P resources of same type. 
 
 Conditions:
 
-Maximum resource need of each process is between 1 and P.
-Summation of all maximum needs is less than P+Q
+1. Maximum resource need of each process is between 1 and P.
+
+2. Summation of all maximum needs is less than P+Q
