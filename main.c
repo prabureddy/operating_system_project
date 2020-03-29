@@ -65,4 +65,8 @@ main()
 
         avgt += wait[i] + burst[i];
     }
+
+    printf("\n\n");
+
+    printf("Average waiting time : %f\nAverage Turn around time : %f\n\n", avgw / (float)n, avgt / (float)n);
 }
